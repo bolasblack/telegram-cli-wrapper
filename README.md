@@ -11,8 +11,8 @@ Underlyingly makes use of telegram-cli (https://github.com/vysheng/tg).
 1. To run it locally run the following command:
 
  `git clone --recursive git@github.com:tincann/telegram-cli-wrapper.git`
-  
-  The `--recursive` argument is important, as it will also install the submodules of tg. 
+
+  The `--recursive` argument is important, as it will also install the submodules of tg.
 
 2. Afterwards install all dependencies by running:
 
@@ -38,12 +38,18 @@ After this is done you can use the TelegramAPI object in the lib directory. Usag
 var tgapi = require('./lib/telegram-api.js');
 
 tgapi.connect(function(connection){
-    connection.on('message', function(message){
-        console.log('message:', message);
-    });
+  connection.on('online', function(onlineStatus){
+  });
+  connection.on('offline', function(offlineStatus){
+  });
+  connection.on('message', function(message){
+  });
+  connection.on('updates', function(updatesStatus){
+  });
 });
 ```
 
+[Event data struct](https://github.com/bolasblack/telegram-json-struct)
 
 ##Windows
 
