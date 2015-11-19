@@ -10,7 +10,7 @@ Underlyingly makes use of telegram-cli (https://github.com/vysheng/tg).
 
 1. To run it locally run the following command:
 
- `git clone --recursive git@github.com:tincann/telegram-cli-wrapper.git`
+ `git clone --recursive git@github.com:bolasblack/telegram-cli-wrapper.git telegram-cli-nodejs`
 
   The `--recursive` argument is important, as it will also install the submodules of tg.
 
@@ -35,7 +35,7 @@ Then you should set up access to a telegram account by following the steps in th
 After this is done you can use the TelegramAPI object in the lib directory. Usage example:
 
 ```javascript
-var tgapi = require('./lib/telegram-api.js');
+var tgapi = require('telegram-cli-nodejs');
 
 tgapi.connect(function(connection){
   connection.on('online', function(onlineStatus){
