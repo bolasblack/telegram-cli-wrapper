@@ -14,9 +14,9 @@ Underlyingly makes use of telegram-cli (https://github.com/vysheng/tg).
 
   The `--recursive` argument is important, as it will also install the submodules of tg.
 
-2. Afterwards install all dependencies by running:
+2. Install libs: readline, openssl and (if you want to use config) libconfig, liblua, python and libjansson.
 
-  `sudo apt-get install libreadline-dev libconfig-dev libssl-dev libevent-dev make`
+  Follow the [document](https://github.com/vysheng/tg#installation) of `tg` to install.
 
 3. Then run:
 
